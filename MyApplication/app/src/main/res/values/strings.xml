@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">MainPageActivity</string>
     <string name="spinner_title">language</string>
+    <string name="q1">Rate our transport facility</string>
+        <string name="feedback">Feedback</string>
+        <string name="logout">Logout</string>
+        <string name="confirm">Confirm</string>
+
+
 </resources>

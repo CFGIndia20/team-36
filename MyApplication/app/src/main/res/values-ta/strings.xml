@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MainPageActivity</string>
+    <string name="spinner_title">language</string>
+    <string name="feedback">பின்னூட்டம்</string>
+    <string name="q1">எனது போக்குவரத்து வசதியை மதிப்பிடுங்கள்</string>
+    <string name="confirm">உறுதிப்படுத்தவும்</string>
+        <string name="logout">வெளியேறு</string>
+
+
+
+</resources>

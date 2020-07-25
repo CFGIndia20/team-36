@@ -4,11 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,8 +23,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mSend;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
      String mVerificationId;
-//    private String mResendToken;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,43 +38,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this);
         userIsLoggedIn();
-        FirebaseApp.initializeApp(this);
+
         mPhoneNumber=findViewById(R.id.phoneNumber);
         mCode= findViewById(R.id.code);
         mSend=findViewById(R.id.send);
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
-        // Spinner click listener
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = adapterView.getItemAtPosition(i).toString();
-                Toast.makeText(adapterView.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
-        // Spinner Drop down elements
-        List<String> categories = new ArrayList<String>();
-        categories.add("English");
-        categories.add("Bengali");
-        categories.add("Tamil");
-        categories.add("Marathi");
-        categories.add("Telugu");
-
-
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-
-        // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        spinner.setAdapter(dataAdapter);
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
