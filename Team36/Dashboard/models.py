@@ -1,9 +1,11 @@
-from django.db import models
 
 # Create your models here.
 from django.db import models
 
 # Create your models here.
+class manager(models.Model):
+	name = models.CharField(max_length=30)
+
 class Center(models.Model):
 	city = models.CharField(max_length=30)
 	email_id = models.EmailField(max_length=254)
