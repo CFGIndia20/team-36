@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 
-# from .models import *
+from .models import *
 from .forms import *
 from django.contrib import messages
 from .whatsappAPI import send_message
@@ -12,7 +12,7 @@ from .whatsappAPI import send_message
 from django.views.generic import View
 import pdfkit
 from django.http import HttpResponse
-# Create your views here.
+
 from xhtml2pdf import pisa 
 from django.template import Context
 
