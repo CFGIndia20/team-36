@@ -31,28 +31,38 @@ def reportGenerator(request):
     return HttpResponse("<h1>Hello World</h1>")
 
 def pdf(request):
+
+    count = "7"
     # Create a file-like buffer to receive PDF data.
     buffer = io.BytesIO()
 
     # Create the PDF object, using the buffer as its "file."
     p = canvas.Canvas(buffer)
-    name = "palak davda"
+    name = "Palak Davda"
     # Draw things on the PDF. Here's where the PDF generation happens.
     # See the ReportLab documentation for the full list of functionality.
     # p.drawImage("https://ibb.co/PY2psYB", 0,0)
     # p.drawInlineImage( "/static/footer_image.png", inch*.25, inch*.25, PAGE_WIDTH-(.5*inch), (.316*inch))
-    p.drawString(30, 750, "Hello " + name)
-    p.drawString(30, 735, "Thanks for your contribution")
-    p.drawString(30, 700, "Your contribution is vital to our work")
-    
-    
-    p.drawString(30, 685, "Thankyou again for your generous gift. It's only through supporters like you that ")
-    
-    p.drawString(30,670, "we will achieve our mission")
-    p.drawString(30,650, "Because of your $100 donation, we were able to help 7 childrens suffering from fatal disease")
+    p.drawString(30, 755, "Dear " + name)
+    p.drawString(30, 735, "We would like to express sincere thanks for helping us, and the needy childrens.")
+    p.drawString(30, 720, "Your contribution is vital to our work")
+    p.drawString(30,690,"Every child suffering from cancer, irrespective of economic status, deserves to get ")
+    p.drawString(30,675,"the best chance of surviving the disease and leading a full, healthy, happy life. ")
+    p.drawString(30,660,"St. Judes provides this chance through its well-established model of cost-free, holistic care")
+    p.drawString(30,645,"during the period of the child's treatment. We were able to create an impact on the society, this")
+    p.drawString(30,630, "kind of efforts is really much appreciated.")
+    p.drawString(30,605, "It was only possible because of you, because of your $100 donation, we were able to help"+count+" childrens ")
+    p.drawString(30,590,"suffering from fatal disease. We aim at extending help to all the people in need, and we would be able to")
+    p.drawString(30, 575,"acheive this only by the support of our donors like.")
 
-    p.drawString(30,600, "Best Wishes")
-    p.drawString(30,580, "St Juges")
+
+    
+    p.drawString(30, 550, "Thank you again for your generous gift. It's only through supporters like you that ")
+    
+    p.drawString(30,535, "we will achieve our mission. We are looking forward to seeing you again!")
+
+    p.drawString(30,505, "Best Wishes")
+    p.drawString(30,490, "St Judes")
 
     # p.drawString(50, 850, "we would like to thank you." + name)
 

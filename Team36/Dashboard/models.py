@@ -62,4 +62,21 @@ class Transaction(models.Model):
 		return self.donor_id
 
 
+class Question(models.Model):
+	question_txt = models.CharField(max_length=254)
+	category = models.CharField(max_length=25)
+
+class Answers(models.Model):
+	question_id = models.ForeignKey(Question, on_delete=models.CASCADE)
+	option_number = models.IntegerField()
+	center_id = models.ForeignKey(Center, on_delete=models.CASCADE)
+
+class FeedbackStatus(models.Model):
+	children_id = models.ForeignKey(Children, on_delete=models.CASCADE)
+	status = models.CharField(max_length=25)
+
+
+
+
+
 
