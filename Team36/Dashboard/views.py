@@ -4,14 +4,17 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 
+
 # from .models import *
 from .forms import *
 from django.contrib import messages
+from .whatsappAPI import send_message
 
 # Create your views here.
 @login_required(login_url='login')
 def index(request):
 	return HttpResponse("Dashboard Page")
+
 
 def registerPage(request):
 	if request.user.is_authenticated:
