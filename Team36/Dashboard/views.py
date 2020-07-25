@@ -30,7 +30,7 @@ def reportGenerator(request):
     # Returns some HTML as response
     return HttpResponse("<h1>Hello World</h1>")
 
-def pdf(request):
+def pdf(request,donorname):
 
     count = "7"
     # Create a file-like buffer to receive PDF data.
@@ -38,7 +38,7 @@ def pdf(request):
 
     # Create the PDF object, using the buffer as its "file."
     p = canvas.Canvas(buffer)
-    name = "Palak Davda"
+    name = donorname
     # Draw things on the PDF. Here's where the PDF generation happens.
     # See the ReportLab documentation for the full list of functionality.
     # p.drawImage("https://ibb.co/PY2psYB", 0,0)
@@ -150,3 +150,4 @@ def donor1(request):
 @login_required(login_url='login')
 def donor2(request):
 	return render(request,'Dashboard/Donor_2.html')
+
