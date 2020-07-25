@@ -8,67 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:623794262318:android:83ccf7f1030a1a3f552abf",
-        "android_client_info": {
-          "package_name": "com.parulbansal.feedback"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDiq19c-MWy0Sow8zJFinSuKcU-l_StWQM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:623794262318:android:c1d6b2d81f9a2530552abf",
+        "mobilesdk_app_id": "1:623794262318:android:39225cb4262106c9552abf",
         "android_client_info": {
           "package_name": "com.parulbansal.myapplication"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDiq19c-MWy0Sow8zJFinSuKcU-l_StWQM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:623794262318:android:3924422a0d3c44d0552abf",
-        "android_client_info": {
-          "package_name": "com.parulbansal.stjude"
         }
       },
       "oauth_client": [
