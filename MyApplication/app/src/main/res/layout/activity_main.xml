@@ -6,18 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:prompt="@string/spinner_title"/>
+
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Enter Phone Number!"
-        android:layout_below="@id/spinner"
+
     android:id="@+id/phoneNumber"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,UnknownId" />
     <EditText
         android:inputType="number"
         android:maxLength="6"
