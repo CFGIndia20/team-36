@@ -7,7 +7,8 @@ def send_message():
 
     message = client.messages.create( 
                                 from_='whatsapp:+14155238886',  
-                                body='Your Yummy Cupcakes Company order of 1 dozen frosted cupcakes has shipped and should be delivered on July 10, 2019. Details: http://www.yummycupcakes.com/',      
+                                body = 'Please Click here to access your quarterly report: https://drive.google.com/file/d/17zYDF0K8A9EdGEp8169iYVviCR2KbJDo/view?usp=sharing',
+                                #body='Click Here http://localhost:8000/dashboard/pdf/',      
                                 to='whatsapp:+919867416562' 
                             ) 
 
