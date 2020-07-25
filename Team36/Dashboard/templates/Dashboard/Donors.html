@@ -1,41 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Donors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">St. Judes</a>
+      <a class="navbar-brand" href="{% url 'index' %}">St. Judes</a>
     </nav>
 
     <div class="sidebar bg-dark">
       <center>
-        <img src="Logo_CFG.png" class="profile_image" alt="">
+        <img src="{% static 'images/Logo_CFG.png' %}" class="profile_image" alt="">
         <h4>Username</h4>
       </center>
-      <a href="Centers.html"><span>Centers</span></a>
-      <a href="Children.html"><span>Beneficiaries</span></a>
-      <a href="Donors.html" id="selected"><span>Donors</span></a>
+      <a href="{% url 'centers' %}"><span>Centers</span></a>
+      <a href="{% url 'children' %}"><span>Beneficiaries</span></a>
+      <a href="{% url 'donors' %}" id="selected"><span>Donors</span></a>
       <!-- <a href="Transactions.html"><span>Transactions</span></a>
       <a href="#"><span>Beneficiaries</span></a>
       <a href="#"><span>Hospitals</span></a> -->
-      <a href="login/login.html"><span>Logout</span></a>
+      <a href="{% url 'logout' %}"><span>Logout</span></a>
     </div>
 
     <div class="content">
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/1.jpeg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/1.jpeg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Aryaman Singh</h5>
             <p class="card-text">CEO of Yells, New York</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_1.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>
@@ -44,12 +45,12 @@
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/2.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Kamlesh Gupta</h5>
             <p class="card-text">Software Developer at Microsoft</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_2.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor2' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>
@@ -58,12 +59,12 @@
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/3.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/3.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Harshita Sharma</h5>
             <p class="card-text">Manager at Tech India</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_1.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>
@@ -72,12 +73,12 @@
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/4.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/4.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Kamal Singh</h5>
             <p class="card-text">Analyst Goldman Sachs</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_2.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor2' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>
@@ -86,12 +87,12 @@
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/5.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/5.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Manoj Ahirwal</h5>
             <p class="card-text">Professor at DU</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_1.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>
@@ -100,12 +101,12 @@
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="donors/6.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/donors/6.jpg' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rupa Gandhi</h5>
             <p class="card-text">Asst. Professor at DU</p>
             <div class="d-flex justify-content-between">
-              <a href="Donor_2.html" class="btn btn-primary">Know More</a>
+              <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
               <a href="#" class="btn btn-success">Send Report</a>
             </div>
           </div>

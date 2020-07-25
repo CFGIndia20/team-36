@@ -83,7 +83,7 @@ def pdf(request):
 @login_required(login_url='login')
 def index(request):
 	send_message()
-	return HttpResponse("<a href='/dashboard/pdf'>Hello World</a>")
+	return render(request,"Dashboard/index.html")
 
 def registerPage(request):
 	if request.user.is_authenticated:
@@ -121,4 +121,32 @@ def loginPage(request):
 def logoutUser(request):
 	logout(request)
 	return redirect("/dashboard/login/")
-	
+
+@login_required(login_url='login')
+def centers(request):
+	return render(request,'Dashboard/Centers.html')
+
+@login_required(login_url='login')
+def beneficiaries(request):
+	return render(request,'Dashboard/Children.html')
+
+@login_required(login_url='login')
+def child1(request):
+	return render(request,'Dashboard/Child_1.html')
+
+@login_required(login_url='login')
+def child2(request):
+	return render(request,'Dashboard/Child_2.html')
+
+
+@login_required(login_url='login')
+def donors(request):
+	return render(request,'Dashboard/donors.html')
+
+@login_required(login_url='login')
+def donor1(request):
+	return render(request,'Dashboard/Donor_1.html')
+
+@login_required(login_url='login')
+def donor2(request):
+	return render(request,'Dashboard/Donor_2.html')

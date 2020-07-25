@@ -1,95 +1,96 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Children</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">St. Judes</a>
+      <a class="navbar-brand" href="{% url 'index' %}">St. Judes</a>
     </nav>
 
     <div class="sidebar bg-dark">
       <center>
-        <img src="Logo_CFG.png" class="profile_image" alt="">
+        <img src="{% static 'images/Logo_CFG.png' %}" class="profile_image" alt="">
         <h4>Username</h4>
       </center>
-      <a href="Centers.html"><span>Centers</span></a>
-      <a href="Children.html" id="selected"><span>Beneficiaries</span></a>
-      <a href="Donors.html"><span>Donors</span></a>
+      <a href="{% url 'centers' %}"><span>Centers</span></a>
+      <a href="" id="selected"><span>Beneficiaries</span></a>
+      <a href="{% url 'donors' %}"><span>Donors</span></a>
       <!-- <a href="Transactions.html"><span>Transactions</span></a>
       <a href="#"><span>Beneficiaries</span></a>
       <a href="#"><span>Hospitals</span></a> -->
-      <a href="login/login.html"><span>Logout</span></a>
+      <a href="{% url 'logout' %}"><span>Logout</span></a>
     </div>
 
     <div class="content">
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/1.jpg" alt="Card image cap">
+          <img class="card-img-top" src= "{% static 'images/cancer patients/1.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Shweta Shaw</h5>
             <p class="card-text">A girl suffering from lungs cancer  at an age of 10. She is from  Madhya Pradesh, India.</p>
-            <a href="Child_1.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child1' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/cancer patients/2.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rohit Malik</h5>
             <p class="card-text">A boy suffering from blood cancer  at an age of 19. He is from Haryana, India.</p>
-            <a href="Child_2.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child2' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/3.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/cancer patients/3.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rohini Mishra</h5>
             <p class="card-text">A girl suffering from skin cancer at an age of 15. She is from Uttar Pradesh India.</p>
-            <a href="Child_1.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child1' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/4.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/cancer patients/4.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rohan Dangi</h5>
             <p class="card-text">A boy suffering from blood cancer at an age of 16. He is from Assam India.</p>
-            <a href="Child_2.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child1' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/5.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/cancer patients/5.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Manoj Tiwari</h5>
             <p class="card-text">A boy suffering from skin cancer at an age of 5. He is from Uttar Pradesh India.</p>
-            <a href="Child_1.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child1' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
 
       <div class="p-5" style="float: left;">
         <div class="card p-2" style="width: 18rem;">
-          <img class="card-img-top" src="cancer patients/6.jpg" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/cancer patients/6.jpg' %}"  alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Nitya Sharma</h5>
             <p class="card-text">A girl suffering from blood cancer at an age of 7. She is from Uttar Pradesh India.</p>
-            <a href="Child_2.html" class="btn btn-primary">Know More</a>
+            <a href="{% url 'child1' %}" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
