@@ -15,7 +15,7 @@ class Center(models.Model):
 
 	
 class Beneficiary(models.Model):
-	name  = models.CharField(max_length=30)
+	name  = models.CharField(max_length=90)
 	phone_no = models.IntegerField()
 	email_id = models.EmailField(max_length=254)
 	address =  models.CharField(max_length=30)
@@ -60,7 +60,7 @@ class Transaction(models.Model):
 	amount = models.IntegerField()
 	date =  models.DateField()
 	def __str__(self):
-		return self.donor_id + " " + self.center_id 
+		return self.donor_id
 
 
 
