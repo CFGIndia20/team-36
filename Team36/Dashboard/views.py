@@ -13,8 +13,8 @@ from .whatsappAPI import send_message
 # Create your views here.
 @login_required(login_url='login')
 def index(request):
+	send_message()
 	return HttpResponse("Dashboard Page")
-
 
 def registerPage(request):
 	if request.user.is_authenticated:
@@ -30,7 +30,7 @@ def registerPage(request):
 			return redirect("/dashboard/")
 		
 		context = {'form':form}
-		return render(request,"Dashboard/register.html",context)
+		return render(request,"Dashboard/register_2.html",context)
 
 def loginPage(request):
 	if request.user.is_authenticated:
@@ -47,7 +47,7 @@ def loginPage(request):
 			else:
 				messages.info(request,"Username or password is incorrect")
 
-		return render(request,'Dashboard/login.html')
+		return render(request,'Dashboard/login_2.html')
 		
 def logoutUser(request):
 	logout(request)

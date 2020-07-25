@@ -482,44 +482,31 @@
 				<span class="login100-form-title p-b-41">
 					Register
 				</span>
-				<form method="POST" action ="" class="login100-form validate-form p-b-33 p-t-5">
-                    {% csrf_token %}
+				<form class="login100-form validate-form p-b-33 p-t-5">
 
-                    <!-- <div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="first_name" placeholder="User Name">
-                        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-                        {{form.username}}
-                    </div> -->
-                    
-                    <!-- <div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="last_name" placeholder="Last Name">
+                    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="first_name" placeholder="First Name">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
-                    </div> -->
-                    
-                    <div class="wrap-input100">
-                        <div class="input100" type="text" name="first_name" placeholder="User Name">
-                         <span class="focus-input100" data-placeholder="&#xe82a;" ></span> 
-                         {{form.username}}
-					</div>
-
-                    
-                    <div class="wrap-input100">
-						<div class="input100" type="email" name="email" placeholder="Email id">
-                            <span class="focus-input100" data-placeholder="&#xe82a;" ></span>
-                            {{form.email}}
-                    </div> 
-                
-					
-					<div class="wrap-input100 ">
-						<div class="input100" type="password" name="pass" placeholder="Password">
-                        <span class="focus-input100" data-placeholder="&#xe80f;"></span>
-                        {{form.password1}}
                     </div>
                     
-                    <div class="wrap-input100 ">
-						<div class="input100" type="password" name="pass" placeholder="Re-enter Password">
-                        <span class="focus-input100" data-placeholder="&#xe80f;"></span>
-                        {{form.password2}}
+                    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="last_name" placeholder="Last Name">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="email" name="email" placeholder="Email id">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="User name">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
 					<div class="container-login100-form-btn" style="margin-top: 32px; padding-bottom: 20px;">
@@ -527,13 +514,7 @@
 							Register
 						</button>
 					</div>
-                </form>
-                
-                <!-- <div>
-					<div>
-						Already have an account? <a href="{% url 'login' %}" class="ml-2">Login</a>
-					</div>
-				</div> -->
+				</form>
 			</div>
 		</div>
 	</div>
