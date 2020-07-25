@@ -122,25 +122,3 @@ def logoutUser(request):
 	logout(request)
 	return redirect("/dashboard/login/")
 	
-
-
-
-
-# sending message
-
-# from twilio.twiml.messaging_response import Body, Message, Redirect, MessagingResponse
-# from twilio.rest import Client
-
-# def load_twilio_config(request):
-#     account_sid = 'AC7f3ec6f3c60afb80126b6b8df39bfc44'
-#     auth_token = '107acd298115ef1aaed81e1dae4efb01'
-#     client = Client(account_sid, auth_token)
-
-#     message = client.messages \
-#                 .create(
-#                      body="Join Earth's mightiest heroes. Like Kevin Bacon.",
-#                      from_='+14155238886',
-#                      to='+918985607459' 
-#                  )
-
-#     print(message.sid)
