@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "623794262318",
+    "firebase_url": "https://stjude-4398d.firebaseio.com",
+    "project_id": "stjude-4398d",
+    "storage_bucket": "stjude-4398d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623794262318:android:39225cb4262106c9552abf",
+        "android_client_info": {
+          "package_name": "com.parulbansal.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiq19c-MWy0Sow8zJFinSuKcU-l_StWQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623794262318-egl392u61127hqfln8v84ur940bk0f45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

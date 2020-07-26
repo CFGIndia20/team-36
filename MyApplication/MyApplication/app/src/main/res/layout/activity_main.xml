@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Phone Number!"
+
+    android:id="@+id/phoneNumber"
+        tools:ignore="MissingConstraints,UnknownId" />
+    <EditText
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Verification Code!"
+        android:id="@+id/code"
+        android:layout_below="@id/phoneNumber"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Verification code"
+        android:id="@+id/send"
+        android:layout_below="@id/code"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
