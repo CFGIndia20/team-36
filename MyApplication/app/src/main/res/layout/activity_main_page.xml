@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/stjudes">
 
     <Spinner
         android:id="@+id/spinner1"
@@ -60,6 +60,7 @@
         android:layout_below="@id/radio_group"
         android:layout_marginTop="16dp"
         android:text="@string/confirm" />
+
     <Button
         android:id="@+id/logout"
         android:layout_width="match_parent"
