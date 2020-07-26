@@ -30,7 +30,7 @@ def reportGenerator(request):
     # Returns some HTML as response
     return HttpResponse("<h1>Hello World</h1>")
 
-def pdf(request,donorname):
+def pdf(request ):
 
     count = "7"
     # Create a file-like buffer to receive PDF data.
@@ -150,7 +150,7 @@ def donor1(request):
 @login_required(login_url='login')
 def donor2(request):
 	return render(request,'Dashboard/Donor_2.html')
-    
+
 from twilio.twiml.messaging_response import MessagingResponse
 
 

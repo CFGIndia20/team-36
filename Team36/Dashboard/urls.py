@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     path('feedback/', views.reportGenerator, name='reportGenerator'),
     # path('sendreport/donor1/',views.sendreport),
-    path('pdf/<str:donorname>/', views.pdf),
+    path('pdf/', views.pdf, name="pdf"),
     path('', views.index, name='index'),
     path('register/',views.registerPage,name="register"),
     path('login/',views.loginPage,name="login"),
@@ -17,6 +17,6 @@ urlpatterns = [
     path('beneficiaries/child2',views.child2,name="child2"),
     path('donors/donor1',views.donor1,name="donor1"),
     path('donors/donor2',views.donor2,name="donor2"),
-    path('sms', views.sendSms),
+    path('sms/', views.sendSms, name="sms"),
 
 ]

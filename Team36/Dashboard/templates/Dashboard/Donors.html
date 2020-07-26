@@ -34,11 +34,11 @@
         <div class="card p-2" style="width: 18rem;">
           <img class="card-img-top" src="{% static 'images/donors/1.jpeg' %}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Aryaman Singh</h5>
-            <p class="card-text">CEO of Yells, New York</p>
+            <h5 class="card-title">Palak Davda</h5>
+            <p class="card-text">Student</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
-              <a href="" class="btn btn-success">Send Report</a>
+              <a href="{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
             <p class="card-text">Software Developer at Microsoft</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor2' %}" class="btn btn-primary">Know More</a>
-              <a href="#" class="btn btn-success">Send Report</a>
+              <a href="{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
             <p class="card-text">Manager at Tech India</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
-              <a href="#" class="btn btn-success">Send Report</a>
+              <a href="{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
             <p class="card-text">Analyst Goldman Sachs</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor2' %}" class="btn btn-primary">Know More</a>
-              <a href="#" class="btn btn-success">Send Report</a>
+              <a href="{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
             <p class="card-text">Professor at DU</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
-              <a href="#" class="btn btn-success">Send Report</a>
+              <a href="{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
             <p class="card-text">Asst. Professor at DU</p>
             <div class="d-flex justify-content-between">
               <a href="{% url 'donor1' %}" class="btn btn-primary">Know More</a>
-              <a href="#" class="btn btn-success">Send Report</a>
+              <a href="#{% url 'pdf' %}" class="btn btn-success">Send Report</a>
             </div>
           </div>
         </div>
