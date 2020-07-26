@@ -26,6 +26,8 @@ from django.http import FileResponse
 import io
 from reportlab.lib.units import inch
 
+from twilio.rest import Client
+
 def reportGenerator(request):
     # Returns some HTML as response
     return HttpResponse("<h1>Hello World</h1>")
@@ -155,9 +157,18 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 
 def sendSms(request):
-    resp = MessagingResponse()
+    account_sid = 'XXXX'
+    auth_token = 'XXXX'
+    client = Client(account_sid, auth_token)
 
-    # Add a message
-    resp.message("The Robots are coming! Head for the hills!")
+    message = client.messages \
+                .create(
+                     body="Welcome to CFG India 2020 !",
+                     from_='+13392349976',
+                     to='<your-number>'
+                 )
 
-    return str(resp)
+    if message.sid:
+        return HttpResponse('SMS sent')
+    else:
+        return HttpResponse('Error')
