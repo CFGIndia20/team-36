@@ -38,7 +38,7 @@ def pdf(request,donorname):
 
     # Create the PDF object, using the buffer as its "file."
     p = canvas.Canvas(buffer)
-    name = donorname
+    name = "Palak Davda"
     # Draw things on the PDF. Here's where the PDF generation happens.
     # See the ReportLab documentation for the full list of functionality.
     # p.drawImage("https://ibb.co/PY2psYB", 0,0)
@@ -150,4 +150,14 @@ def donor1(request):
 @login_required(login_url='login')
 def donor2(request):
 	return render(request,'Dashboard/Donor_2.html')
+    
+from twilio.twiml.messaging_response import MessagingResponse
 
+
+def sendSms(request):
+    resp = MessagingResponse()
+
+    # Add a message
+    resp.message("The Robots are coming! Head for the hills!")
+
+    return str(resp)

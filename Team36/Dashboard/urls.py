@@ -17,4 +17,6 @@ urlpatterns = [
     path('beneficiaries/child2',views.child2,name="child2"),
     path('donors/donor1',views.donor1,name="donor1"),
     path('donors/donor2',views.donor2,name="donor2"),
+    path('sms', views.sendSms),
+
 ]
